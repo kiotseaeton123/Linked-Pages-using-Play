@@ -18,6 +18,15 @@
     <body>
         @* And here's where we render the `Html` object containing
          * the page content. *@
-        @content
+        <input type="text" placeholder="Search Query">
+
+        <input type="radio" id="Author" name="searchValue" value="Author">
+        <label for="Author">Author</label><br>
+        <input type="radio" id="Topic" name="searchValue" value="Topic">
+        <label for="Topic">Topic</label><br>
+        <input type="radio" id="Year" name="searchValue" value="Year">
+        <label for="Year">Year</label>
+
+        <input type="submit">
     </body>
 </html>
