@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET           /                        controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET           /count                   controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET           /message                 controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+# defining path parameter spanning several path segments
+GET           /assets/*file            controllers.Assets.versioned(file)
+
+
+#returns list of papers available(format: URL pattern - Action call)
+GET           /papers                  controllers.PapersController.list
+#creates new paper
+POST          /papers                  controllers.PapersController.create(request: Request)
+#shows details of paper
+GET           /papers/$paper_id<\d+>       controllers.PapersController.details(paper_id: Long)
+#updates info of paper
+PUT           /papers/$paper_id<\d+>        controllers.PapersController.update(paper_id: Long)
+#delete paper
+DELETE        /papers/$paper_id<\d+>       controllers.PapersController.delete(paper_id: Long)
