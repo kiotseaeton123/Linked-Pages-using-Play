@@ -6,6 +6,7 @@ import play.libs.ws.WSClient;
 import play.libs.ws.WSRequest;
 import play.libs.ws.WSResponse;
 
+import java.util.Locale;
 import java.util.concurrent.CompletionStage;
 
 public class Paper {
@@ -25,7 +26,7 @@ public class Paper {
     }
 
     public String getTitle() {
-        return title;
+        return title.toLowerCase(Locale.ROOT);
     }
 
     public void setTitle(String title) {
@@ -33,7 +34,7 @@ public class Paper {
     }
 
     public String getAuthor() {
-        return author;
+        return author.toLowerCase(Locale.ROOT);
     }
 
     public void setAuthor(String author) {
@@ -41,7 +42,7 @@ public class Paper {
     }
 
     public String getDate() {
-        return date;
+        return date.toLowerCase(Locale.ROOT);
     }
 
     public void setDate(String date) {
@@ -49,7 +50,7 @@ public class Paper {
     }
 
     public String getTopic() {
-        return topic;
+        return topic.toLowerCase(Locale.ROOT);
     }
 
     public void setTopics(String topic) {
@@ -61,12 +62,12 @@ public class Paper {
         WSClient ws = play.test.WSTestClient.newClient(9005);
         //add username password
         WSRequest request = ws.url("http://localhost:9005/search");
-        System.out.println("testing call request");
+
         ObjectNode res = Json.newObject();
         res.put("title", this.title);
         res.put("author",this.author);
         res.put("topic", this.topic);
-        System.out.println("title:"+this.title +"author"+this.author+ "topic"+this.topic);
+
         return request.addHeader("Content-Type", "application/json")
                 .post(res)
                 .thenApply((WSResponse r) -> {

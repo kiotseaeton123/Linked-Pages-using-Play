@@ -89,7 +89,10 @@ public class PapersController extends Controller {
                 return ok(views.html.bootResults.render(result));
 
             } else {
-                String message = "response null";
+                System.out.println("RESPONSE: " + response);
+                System.out.println(response.asJson());
+
+                String message = "paper not found...";
                 return badRequest(views.html.index.render(message));
             }
         }, ec.current());

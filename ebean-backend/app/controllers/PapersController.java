@@ -8,27 +8,26 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import java.util.Locale;
+
 public class PapersController extends Controller {
 
     public Result search() {
 
         JsonNode req = request().body().asJson();
 
-        String title = req.get("title").asText();
-        String author = req.get("author").asText();
-        String topic = req.get("topic").asText();
+        String title = req.get("title").asText().toLowerCase(Locale.ROOT);
+        String author = req.get("author").asText().toLowerCase(Locale.ROOT);
+        String topic = req.get("topic").asText().toLowerCase(Locale.ROOT);
 
+//        json-string is "" when there is no input
         if (title != "") {
-            System.out.println("TITLE NOT NULL");
-            System.out.println(title);
             return findByTitle(title);
         }
         else if(author != ""){
-            System.out.println("AUTHOR NOT NULL");
             return findByAuthor(author);
         }
         else if(topic != ""){
-            System.out.println("TOPIC NOT NULL");
             return findByTopic(topic);
         }
         else{
