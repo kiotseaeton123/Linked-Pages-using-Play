@@ -1,0 +1,54 @@
+@(topics: List[String])
+<!DOCTYPE html>
+<html>
+    @bootLayout("") {
+        <main role="main">
+            <div class="jumbotron jumbotron-main">
+                <div class="row p-5">
+                    <div class="col-md-12">
+                        <h1 class="display-4">Linked Papers</h1>
+                        <p class="lead">Welcome to Linked Papers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row p-5">
+                    <div class="row">
+                        <h5 class="display-4">
+                            <div class="col-md-10">
+                                <p class="mt-1 ml-4">
+                                    Explore topics you are interested in
+                                </p>
+                            </div>
+                        </h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="display-5 font-weight-lighter mt-0 ml-4">SEARCH TOPICS</p>
+                        </div>
+                    </div>
+                    <div class="row mt-0 ml-5">
+                        <div class="row">
+                            <div class="ml-0 col-md-12">
+                                <div class="row">
+                                    <form action="@routes.PapersController.testHandler()" method="GET">
+                                        <div class="row">
+                                            @for(topic <- topics) {
+                                                <div class="col-md-2">
+                                                    <div class="form-select">
+                                                        <input id="topic" name="topic" class="invisible" value=@topic>
+                                                        <button id="topic" class="btn btn-outline-secondary" type="submit">@topic</button>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    }
+</html>

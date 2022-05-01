@@ -1,0 +1,34 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/background.css")">
+    </head>
+    <body>
+        <header>
+            <!--navbar collapses when below the sm breakpoint-->
+            <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-primary py-1">
+                <a class="navbar-brand ml-4" href="@routes.PapersController.index()">
+                    Linked Papers
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@routes.PapersController.index()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@routes.PapersController.searchPage()">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@routes.PapersController.renderSurprise()">Surprise</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        @content
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+@bootLayout("") {
+    <body>
+        <main>
+            <div id="welcome" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#welcome" data-slide-to="0" class="active"></li>
+                    <li data-target="#welcome" data-slide-to="1"></li>
+                    <li data-target="#welcome" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active welcome-image1">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Welcome to the topics page!</h1>
+                                <p><a class="btn btn-lg btn-primary" href="@routes.PapersController.searchTopic("Chemistry")" role="button">Chemistry</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item welcome-image2">
+                        <div class="container">
+                            <div class="carousel-caption text-left">
+                                <h1>More about...</h1>
+                                <p><a class="btn btn-lg btn-primary" href="@routes.PapersController.searchTopic("Biology")" role="button">Biology</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item welcome-image3">
+                        <div class="container">
+                            <div class="carousel-caption text-left">
+                                <h1>Discover...</h1>
+                                <p><a class="btn btn-lg btn-primary" href="@routes.PapersController.searchTopic("Physics")" role="button">Physics</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- done carousel inner -->
+                <a class="carousel-control-prev" href="#welcome" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#welcome" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src="@routes.Assets.at("javascripts/bootstrap.js")"></script>
+    </body>
+}
+</html>
+    <!--<div class="jumbotron jumbotron-donuts">
+            <div class="progress">
+                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 60%" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    Until Summer Break </div>
+            </div>
+            <div class="progress mt-4">
+                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    Current Sleepiness </div>
+            </div>
+            <div class="progress mt-4">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 75%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    Project Progress </div>
+            </div>
+        </div> -->
