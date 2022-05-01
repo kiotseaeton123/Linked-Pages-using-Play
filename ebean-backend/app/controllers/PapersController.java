@@ -18,13 +18,17 @@ public class PapersController extends Controller {
         String author = req.get("author").asText();
         String topic = req.get("topic").asText();
 
-        if (title != null) {
+        if (title != "") {
+            System.out.println("TITLE NOT NULL");
+            System.out.println(title);
             return findByTitle(title);
         }
-        else if(author != null){
+        else if(author != ""){
+            System.out.println("AUTHOR NOT NULL");
             return findByAuthor(author);
         }
-        else if(topic != null){
+        else if(topic != ""){
+            System.out.println("TOPIC NOT NULL");
             return findByTopic(topic);
         }
         else{

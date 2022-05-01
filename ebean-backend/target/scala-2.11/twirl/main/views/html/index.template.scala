@@ -55,8 +55,8 @@ Seq[Any](format.raw/*1.19*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Sat Apr 30 21:24:55 CDT 2022
-                  SOURCE: C:/Users/kiots/Documents/software/team1-search-engine/ebean-backend/app/views/index.scala.html
+                  DATE: Sat Apr 30 22:33:28 CDT 2022
+                  SOURCE: C:/Users/kiots/Documents/software/a-web-application/ebean-backend/app/views/index.scala.html
                   HASH: 394744f9ede242f71895fc5e5d8cb24fd6f8c7cb
                   MATRIX: 745->1|857->18|884->19|940->50|967->57
                   LINES: 27->1|32->1|33->2|35->4|35->4
