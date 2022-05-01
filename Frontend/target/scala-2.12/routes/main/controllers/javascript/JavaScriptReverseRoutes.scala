@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/kiots/Documents/software/a-web-application/Frontend/conf/routes
-// @DATE:Sat Apr 30 22:24:08 CDT 2022
+// @DATE:Sat Apr 30 23:21:26 CDT 2022
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -123,8 +123,8 @@ package controllers.javascript {
     def searchTopic: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PapersController.searchTopic",
       """
-        function(topic0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "topic" + _qS([(""" + implicitly[play.api.mvc.QueryStringBindable[String]].javascriptUnbind + """)("topic", topic0)])})
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "topic"})
         }
       """
     )

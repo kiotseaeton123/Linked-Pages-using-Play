@@ -43,7 +43,7 @@ public class PapersController extends Controller {
                 System.out.println(jsonResult);
                 return ok(jsonResult);
             } else {
-                return ok("false");
+                return ok("not found");
             }
         } catch (Exception e) {
             return ok("false");
@@ -59,7 +59,8 @@ public class PapersController extends Controller {
                 JsonNode jsonResult = Json.toJson(paper);
                 return ok(jsonResult);
             } else {
-                return ok("false");
+                System.out.println("author not found");
+                return ok("not found");
             }
         } catch (Exception e) {
             return ok("false");
@@ -72,10 +73,11 @@ public class PapersController extends Controller {
             Paper paper = Paper.findByTopic(topic);
 
             if (paper != null) {
+                System.out.println("FOUND TOPIC");
                 JsonNode jsonResult = Json.toJson(paper);
                 return ok(jsonResult);
             } else {
-                return ok("false");
+                return ok("not found");
             }
         } catch (Exception e) {
             return ok("false");

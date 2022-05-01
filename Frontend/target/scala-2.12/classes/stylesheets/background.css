@@ -2,11 +2,53 @@ body{
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-image: url('../images/pink.png');
-    background-repeat: repeat;
+    /*background-repeat: repeat;*/
 }
-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 130px;
+.bg-primary{
+    background-color: lavenderblush !important;
+}
+.jumbotron-donuts{
+    background: url("../images/donuts.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(50,0,0,.40);
+}
+.jumbotron-paper{
+    background: url('../images/paper.jpg') repeat fixed;
+    height: 40vh;
+    background-size: cover;
+}
+.jumbotron-main{
+    /*a specific style for main*/
+    background: url('../images/whiteearth.png') no-repeat fixed;
+    box-shadow: inset 0 0 0 1000px rgba(50,0,0,.16);
+}
+.jumbotron{
+    /*40% of vertical height*/
+    height: 80vh;
+    background-size: cover;
+}
+.carousel{
+    margin-bottom: 4rem;
+}
+.carousel-caption{
+    bottom: 3rem;
+    z-index: 10;
+}
+.carousel-item{
+    height: 23rem;
+    max-width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.welcome-image1{
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+    background-image: url("../images/chemistry.jpg");
+}
+.welcome-image2{
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+    background-image: url("../images/biology.jpg");
+}
+.welcome-image3{
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+    background-image: url("../images/physics.jpg");
 }

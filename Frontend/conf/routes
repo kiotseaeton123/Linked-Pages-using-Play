@@ -9,7 +9,7 @@ GET        /surprise              controllers.PapersController.renderSurprise()
 
 #routes for coordination between http endpoint and logic
 GET        /search-handler        controllers.PapersController.searchHandler()
-GET        /topic                 controllers.PapersController.searchTopic(topic: String)
+GET        /topic                 controllers.PapersController.searchTopic()
 GET        /test-handler          controllers.PapersController.testHandler()
 
 #below are example routes, not used for this project

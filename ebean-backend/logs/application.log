@@ -61,3 +61,23 @@
 2022-04-30 22:53:20,279 [INFO] from application in application-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
 2022-04-30 22:53:20,296 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:mysql://localhost:3306/team1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
 2022-04-30 22:53:20,380 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2022-04-30 23:23:31,365 [INFO] from application in application-akka.actor.default-dispatcher-23 - Shutting down connection pool.
+2022-04-30 23:23:31,509 [INFO] from application in application-akka.actor.default-dispatcher-23 - Creating Pool for datasource 'default'
+2022-04-30 23:23:31,527 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-23 - Database [default] connected at jdbc:mysql://localhost:3306/team1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-30 23:23:31,737 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-23 - Application started (Dev)
+2022-04-30 23:26:09,694 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2022-04-30 23:26:09,839 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2022-04-30 23:26:09,871 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:mysql://localhost:3306/team1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-30 23:26:10,021 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2022-04-30 23:33:49,044 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2022-04-30 23:33:49,152 [INFO] from application in application-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2022-04-30 23:33:49,175 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:mysql://localhost:3306/team1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-30 23:33:49,263 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2022-04-30 23:34:25,549 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2022-04-30 23:34:25,708 [INFO] from application in application-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2022-04-30 23:34:25,721 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:mysql://localhost:3306/team1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-30 23:34:25,883 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2022-04-30 23:36:21,898 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2022-04-30 23:36:21,960 [INFO] from application in application-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
+2022-04-30 23:36:21,970 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:mysql://localhost:3306/team1?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-30 23:36:22,031 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)

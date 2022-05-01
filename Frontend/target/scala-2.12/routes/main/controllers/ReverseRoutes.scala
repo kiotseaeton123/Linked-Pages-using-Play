@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/kiots/Documents/software/a-web-application/Frontend/conf/routes
-// @DATE:Sat Apr 30 22:24:08 CDT 2022
+// @DATE:Sat Apr 30 23:21:26 CDT 2022
 
 import play.api.mvc.Call
 
@@ -85,9 +85,9 @@ package controllers {
     }
   
     // @LINE:12
-    def searchTopic(topic:String): Call = {
+    def searchTopic(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "topic" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[String]].unbind("topic", topic)))))
+      Call("GET", _prefix + { _defaultPrefix } + "topic")
     }
   
     // @LINE:11

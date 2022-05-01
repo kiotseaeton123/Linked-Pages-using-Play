@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/kiots/Documents/software/a-web-application/Frontend/conf/routes
-// @DATE:Sat Apr 30 22:24:08 CDT 2022
+// @DATE:Sat Apr 30 23:21:26 CDT 2022
 
 
 package router {

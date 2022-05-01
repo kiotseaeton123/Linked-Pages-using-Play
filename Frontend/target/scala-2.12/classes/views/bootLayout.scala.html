@@ -4,24 +4,31 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/boot4.6.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap.css")">
         <link rel="stylesheet" href="@routes.Assets.at("stylesheets/background.css")">
     </head>
     <body>
-        <main role="main">
-            <div class="container-fluid">
-                <div class="jumbotron">
-                    <div class="row p-5">
-                        <div class="col-md-12">
-                            <h1 class="display-4">@title</h1>
-                            <p class="lead">Welcome to Linked Papers</p>
-                        </div>
-                    </div>
+        <header>
+            <!--navbar collapses when below the sm breakpoint-->
+            <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-primary py-1">
+                <a class="navbar-brand ml-4" href="@routes.PapersController.index()">
+                    Linked Papers
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@routes.PapersController.index()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@routes.PapersController.searchPage()">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@routes.PapersController.renderSurprise()">Surprise</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row p-5">
-                    @content
-                </div>
-            </div>
-        </main>
+            </nav>
+        </header>
+        @content
     </body>
 </html>

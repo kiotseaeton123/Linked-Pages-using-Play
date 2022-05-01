@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.24*/("""
                         <div class="row">
                             <div class="ml-0 col-md-12">
                                 <div class="row">
-                                    <form action=""""),_display_(/*34.52*/routes/*34.58*/.PapersController.testHandler()),format.raw/*34.89*/("""" method="GET">
+                                    <form action=""""),_display_(/*34.52*/routes/*34.58*/.PapersController.searchTopic()),format.raw/*34.89*/("""" method="GET">
                                         <div class="row">
                                             """),_display_(/*36.46*/for(topic <- topics) yield /*36.66*/ {_display_(Seq[Any](format.raw/*36.68*/("""
                                                 """),format.raw/*37.49*/("""<div class="col-md-2">
@@ -100,9 +100,9 @@ Seq[Any](format.raw/*1.24*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-30T22:24:08.897
+                  DATE: 2022-04-30T23:21:26.348
                   SOURCE: C:/Users/kiots/Documents/software/a-web-application/Frontend/app/views/bootMain.scala.html
-                  HASH: 24ee4a90eb88699be56c31170b2993b2af166b69
+                  HASH: d84022c6063e30255d012806cc606e816a0e4060
                   MATRIX: 957->1|1074->23|1102->25|1157->55|1179->69|1218->71|1254->81|2627->1427|2642->1433|2694->1464|2842->1585|2878->1605|2918->1607|2996->1657|3239->1872|3266->1877|3421->2004|3448->2009|3651->2181|3721->2223|4006->2478|4035->2480
                   LINES: 28->1|33->1|34->2|36->4|36->4|36->4|37->5|66->34|66->34|66->34|68->36|68->36|68->36|69->37|71->39|71->39|72->40|72->40|75->43|76->44|85->53|86->54
                   -- GENERATED --

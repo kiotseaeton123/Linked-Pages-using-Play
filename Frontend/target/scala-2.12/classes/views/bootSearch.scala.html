@@ -1,0 +1,77 @@
+@(topics: List[String])
+<!DOCTYPE html>
+    <html>
+        @bootLayout(""){
+            <div class="row">
+                <div class="jumbotron-fluid jumbotron-paper container-fluid">
+                    <div>
+                        <h4 class="display-4 p-4 ml-4">Find papers here!</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row p-4">
+                    <form action="@routes.PapersController.searchHandler()" method="GET">
+                        <div class="col-md-12 offset-6">
+                                <div class="form-group row mt-4">
+                                    <label for="title" class="col-md-2">Title</label>
+                                    <div class="col-md-10">
+                                        <input id="title" name="title" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="author" class="col-md-2">Author</label>
+                                    <div class="col-md-10">
+                                        <input id="author" name="author" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            @for(topic <- topics){
+                                <div class="form-group form-check mt-0 mb-1 ml-2">
+                                    <input id="topic" name="topic" type="checkbox" class="form-check-input" value="@topic">
+                                    <label for="topic" class="form-check-label form-control-sm">@topic</label>
+                                </div>
+                            }
+                            <button type="submit" class="btn btn-warning btn-block mt-3"><small>Search</small></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+    </html>
+    <!--
+    <form action="routes.PapersController.searchHandler()" method="GET">
+        <div class="row">
+            <div class="input-field col-md-5">
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col-md-5">
+                <label for="author">Author</label>
+                <input id="author" name="author" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <label for="chemistry">Chemistry</label>
+                <input id="chemistry" name="chemistry" type="checkbox">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <label for="biology">Biology</label>
+                <input id="biology" name="biology" type="checkbox">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <label for="physics">Physics</label>
+                <input id="physics" name="physics" type="checkbox">
+            </div>
+        </div>
+        <div class="row">
+            <a type="button" href="bootResults.scala.html" class="btn btn-info m-3 float-right">Submit</a>
+        </div>
+    </form>
+    -->

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/kiots/Documents/software/a-web-application/Frontend/conf/routes
-// @DATE:Sat Apr 30 22:24:08 CDT 2022
+// @DATE:Sat Apr 30 23:21:26 CDT 2022
 
 package router
 
@@ -48,7 +48,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """search""", """controllers.PapersController.searchPage()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """surprise""", """controllers.PapersController.renderSurprise()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """search-handler""", """controllers.PapersController.searchHandler()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topic""", """controllers.PapersController.searchTopic(topic:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topic""", """controllers.PapersController.searchTopic()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """test-handler""", """controllers.PapersController.testHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """index""", """controllers.HomeController.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.HomeController.loginHandler()"""),
@@ -143,12 +143,12 @@ below are http patterns available on web application""",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("topic")))
   )
   private[this] lazy val controllers_PapersController_searchTopic4_invoker = createInvoker(
-    PapersController_0.searchTopic(fakeValue[String]),
+    PapersController_0.searchTopic(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PapersController",
       "searchTopic",
-      Seq(classOf[String]),
+      Nil,
       "GET",
       this.prefix + """topic""",
       """""",
@@ -311,8 +311,8 @@ below are http patterns available on web application""",
   
     // @LINE:12
     case controllers_PapersController_searchTopic4_route(params@_) =>
-      call(params.fromQuery[String]("topic", None)) { (topic) =>
-        controllers_PapersController_searchTopic4_invoker.call(PapersController_0.searchTopic(topic))
+      call { 
+        controllers_PapersController_searchTopic4_invoker.call(PapersController_0.searchTopic())
       }
   
     // @LINE:13

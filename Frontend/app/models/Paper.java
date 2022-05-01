@@ -6,6 +6,7 @@ import play.libs.ws.WSClient;
 import play.libs.ws.WSRequest;
 import play.libs.ws.WSResponse;
 
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.Locale;
 import java.util.concurrent.CompletionStage;
 
@@ -53,7 +54,7 @@ public class Paper {
         return topic.toLowerCase(Locale.ROOT);
     }
 
-    public void setTopics(String topic) {
+    public void setTopic(String topic) {
         this.topic = topic;
     }
 
@@ -71,6 +72,7 @@ public class Paper {
         return request.addHeader("Content-Type", "application/json")
                 .post(res)
                 .thenApply((WSResponse r) -> {
+                    System.out.println(r);
                     return r;
                 });
     }

@@ -46,7 +46,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                         <div class="container">
                             <div class="carousel-caption">
                                 <h1>Welcome to the topics page!</h1>
-                                <p><a class="btn btn-lg btn-primary" href=""""),_display_(/*17.77*/routes/*17.83*/.PapersController.searchTopic("Chemistry")),format.raw/*17.125*/("""" role="button">Chemistry</a></p>
+                                <p><a class="btn btn-lg btn-primary" href=""""),_display_(/*17.77*/routes/*17.83*/.PapersController.searchTopic()),format.raw/*17.114*/("""" role="button">Chemistry</a></p>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                         <div class="container">
                             <div class="carousel-caption text-left">
                                 <h1>More about...</h1>
-                                <p><a class="btn btn-lg btn-primary" href=""""),_display_(/*25.77*/routes/*25.83*/.PapersController.searchTopic("Biology")),format.raw/*25.123*/("""" role="button">Biology</a></p>
+                                <p><a class="btn btn-lg btn-primary" href=""""),_display_(/*25.77*/routes/*25.83*/.PapersController.searchTopic()),format.raw/*25.114*/("""" role="button">Biology</a></p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                         <div class="container">
                             <div class="carousel-caption text-left">
                                 <h1>Discover...</h1>
-                                <p><a class="btn btn-lg btn-primary" href=""""),_display_(/*33.77*/routes/*33.83*/.PapersController.searchTopic("Physics")),format.raw/*33.123*/("""" role="button">Physics</a></p>
+                                <p><a class="btn btn-lg btn-primary" href=""""),_display_(/*33.77*/routes/*33.83*/.PapersController.searchTopic()),format.raw/*33.114*/("""" role="button">Physics</a></p>
                             </div>
                         </div>
                     </div>
@@ -112,10 +112,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-30T22:24:09.023
+                  DATE: 2022-04-30T23:21:26.364
                   SOURCE: C:/Users/kiots/Documents/software/a-web-application/Frontend/app/views/progressComponent.scala.html
-                  HASH: 1e9b11a3f77344a7275a3027d04a0aa0fe566752
-                  MATRIX: 1042->0|1093->26|1115->40|1154->42|1186->48|1989->824|2004->830|2068->872|2541->1318|2556->1324|2618->1364|3087->1806|3102->1812|3164->1852|4065->2726|4080->2732|4139->2770|4196->2797|4225->2799
+                  HASH: 55b01d049b97f975d1b68866abf10fbdd66742ec
+                  MATRIX: 1042->0|1093->26|1115->40|1154->42|1186->48|1989->824|2004->830|2057->861|2530->1307|2545->1313|2598->1344|3067->1786|3082->1792|3135->1823|4036->2697|4051->2703|4110->2741|4167->2768|4196->2770
                   LINES: 33->1|35->3|35->3|35->3|36->4|49->17|49->17|49->17|57->25|57->25|57->25|65->33|65->33|65->33|82->50|82->50|82->50|84->52|85->53
                   -- GENERATED --
               */
