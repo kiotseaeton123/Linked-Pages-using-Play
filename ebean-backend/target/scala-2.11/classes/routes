@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET         /              controllers.HomeController.index
+POST        /search        controllers.PapersController.search()
+
+
+# Below is sample code
+POST        /login         controllers.UserController.authenticate()
+POST        /signup        controllers.UserController.registerNew()
+
