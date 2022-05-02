@@ -1,6 +1,6 @@
 
 ## Linked-Pages: Web Application using Play Framework
-a web application to search and share research papers(in deveolopment)
+a web application to search and share research papers(in development)
 
 ### Play Workflow Basics
 the web application is separated between frontend and backend, and each follows the play application structure: they consist of three key components.
