@@ -4,14 +4,35 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.Paper;
 import models.User;
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.RAMDirectory;
+import org.apache.lucene.util.Version;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import java.io.IOException;
 import java.util.Locale;
 
 public class PapersController extends Controller {
 
+    public Result test() throws IOException {
+//        whitespaceAnalyzer to parse input text, tokenize text into word tokens
+        Analyzer analyzer = new WhitespaceAnalyzer();
+//        create in-memory directory
+        Directory directory = new RAMDirectory();
+//        configure indexwriter with whitespaceAnalyzr
+        IndexWriterConfig config = new IndexWriterConfig(analyzer);
+//        pass directory and indexwriter-configuration to create index writer
+        IndexWriter indexWriter = new IndexWriter(directory, config);
+        return ok();
+    }
+
+    /*BELOW IS FUNCTIONAL IMPLEMENTATION WITHOUT APACHE LUCENE*/
     public Result search() {
 
         JsonNode req = request().body().asJson();
